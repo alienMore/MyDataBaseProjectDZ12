@@ -86,13 +86,13 @@ ORDER BY a.age;
 SELECT * FROM users1 a
 LEFT JOIN users2 b
 ON a.age = b.age
-WHERE (b.age > 30 AND (a.surname='JUTI' OR b.surname='HNVO'));
+WHERE ((b.age > 30) AND (a.surname='JUTI' OR b.surname='HNVO'));
 ORDER BY a.surname;
 --4)
 SELECT * FROM users1 a
 LEFT JOIN users2 b
 ON a.age = b.age
-WHERE (b.age > 30 AND (a.surname='JUTI' OR b.surname='HNVO'))
+WHERE ((b.age > 30) AND (a.surname='JUTI' OR b.surname='HNVO'))
 AND a.id BETWEEN 100 AND 250;
 ORDER BY a.surname;
 --5)
